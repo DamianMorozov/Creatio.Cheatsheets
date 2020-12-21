@@ -2,6 +2,7 @@
 // Select
 // https://academy.terrasoft.ru/documents/technic-sdk/7-11/ispolzovanie-entityschemaquery-dlya-postroeniya-zaprosov-k-baze-dannyh
 // ------------------------------------------------------------------------------------------------------------------------
+
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -30,3 +31,35 @@ EntitySchemaQuery esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager
 esq.AddColumn("SomeColumn");
 // Получение экземпляра Select, ассоциированного с созданным запросом EntitySchemaQuery.
 Select selectEsq = esq.GetSelectQuery(UserConnection); 
+
+// ------------------------------------------------------------------------------------------------------------------------
+
+// SQL-запрос.
+var select = (Select)new Select(userConnection)
+    .Column("Id")
+    .Column("StartDate")
+    .Column("EndDate")
+    .From("ScPriceType")
+    .Where()
+        .OpenBlock()
+            .OpenBlock("StartDate").IsGreaterOrEqual(Column.Parameter(startDate))
+        .CloseBlock()
+        .And()
+        .OpenBlock()
+            .OpenBlock("EndDate").IsLessOrEqual(Column.Parameter(endDate))
+        .CloseBlock()
+    ;
+_log.WriteMessage(userConnection, $"{select.GetSqlText()}");
+// Повторное использование экземпляра DBExecutor в основном потоке.
+using (DBExecutor dbExecutor = userConnection.EnsureDBConnection())
+{
+    using (IDataReader dataReader = select.ExecuteReader(dbExecutor))
+    {
+        while (dataReader.Read())
+        {
+            // dataReader.GetColumnValue<T>("<ColumnName>");
+        }
+    }
+}
+
+// ------------------------------------------------------------------------------------------------------------------------
