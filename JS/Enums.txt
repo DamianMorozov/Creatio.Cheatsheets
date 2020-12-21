@@ -1,0 +1,132 @@
+------------------------------------------------------------------------------------------------------------------------
+Task:      JS. Enums
+------------------------------------------------------------------------------------------------------------------------
+Terrasoft.DataValueType
+https://academy.terrasoft.ru/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.DataValueType
+BLOB
+BOOLEAN
+COLLECTION
+COLOR
+CUSTOM_OBJECT
+DATE
+DATE_TIME
+ENTITY
+ENTITY_COLLECTION
+ENTITY_COLUMN_MAPPING_COLLECTION
+ENUM
+FILE
+FLOAT
+FLOAT1
+FLOAT2
+FLOAT3
+FLOAT4
+GUID / "00000000-0000-0000-0000-000000000000"
+HASH_TEXT
+IMAGE
+IMAGELOOKUP
+INTEGER
+LOCALIZABLE_PARAMETER_VALUES_LIST
+LOCALIZABLE_STRING
+LONG_TEXT
+LOOKUP
+MAPPING
+MAXSIZE_TEXT
+MEDIUM_TEXT
+METADATA_TEXT
+MONEY
+SECURE_TEXT
+SHORT_TEXT
+STAGE_INDICATOR
+TEXT
+TIME
+------------------------------------------------------------------------------------------------------------------------
+Terrasoft.LogicalOperatorType
+https://academy.terrasoft.ru/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.LogicalOperatorType
+AND
+OR
+------------------------------------------------------------------------------------------------------------------------
+Terrasoft.MessageMode
+https://academy.terrasoft.ru/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.MessageMode
+BROADCAST
+PTP
+------------------------------------------------------------------------------------------------------------------------
+Terrasoft.ComparisonType
+https://academy.terrasoft.ru/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.ComparisonType
+BETWEEN
+CONTAIN
+END_WITH : Number
+EQUAL
+EXISTS
+GREATER
+GREATER_OR_EQUAL
+IS_NOT_NULL
+IS_NULL
+LESS
+LESS_OR_EQUAL
+NOT_CONTAIN
+NOT_END_WITH
+NOT_EQUAL
+NOT_EXISTS
+NOT_START_WITH
+START_WITH
+------------------------------------------------------------------------------------------------------------------------
+Terrasoft.ViewItemType
+https://academy.terrasoft.ru/documents/technic-sdk/7-16/massiv-diff
+GRID_LAYOUT        - Элемент-сетка, включающий в себя размещение других элементов управления.
+TAB_PANEL          - Набор вкладок.
+DETAIL             - Деталь.
+MODEL_ITEM         - Элемент модели представления.
+MODULE             - Модуль.
+BUTTON             - Кнопка.
+LABEL              - Надпись.
+CONTAINER          - Контейнер.
+MENU               - Выпадающий список.
+MENU_ITEM          - Элемент выпадающего списка.
+MENU_SEPARATOR     - Разделитель выпадающего списка.
+SECTION_VIEWS      - Представления раздела.
+SECTION_VIEW       - Представление раздела.
+GRID               - Реестр.
+SCHEDULE_EDIT      - Планировщик.
+CONTROL_GROUP      - Группа элементов.
+RADIO_GROUP        - Группа переключателей.
+DESIGN_VIEW        - Настраиваемое представление.
+COLOR_BUTTON       - Цвет.
+IMAGE_TAB_PANEL    - Набор вкладок с иконками.
+HYPERLINK          - Гиперссылка.
+INFORMATION_BUTTON - Information button with tooltip.
+TIP                - Tooltip.
+------------------------------------------------------------------------------------------------------------------------
+Terrasoft.controls.ButtonEnums.style
+BLUE
+DEFAULT
+GREEN
+GREY
+RED
+TRANSPARENT
+------------------------------------------------------------------------------------------------------------------------
+MessageDirectionType
+https://academy.terrasoft.ru/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.MessageDirectionType
+BIDIRECTIONAL
+PUBLISH
+SUBSCRIBE
+------------------------------------------------------------------------------------------------------------------------
+FilterComparisonType
+https://academy.terrasoft.ru/api/netcoreapi/7.15.0/index.html#Terrasoft.Core~Terrasoft.Core.Entities.FilterComparisonType.html
+Between        - The range of values.
+Contain        - Contains the expression.
+EndWith        - Ends with the expression.
+Equal          - Equal to.
+Exists         - Exists by the specified condition.
+Greater        - Greater than.
+GreaterOrEqual - Greater than or equal to.
+IsNotNull      - Is not null in the database.
+IsNull         - Is null in the database.
+Less           - Less than.
+LessOrEqual    - Less than or equal to.
+NotContain     - Does not contain the expression.
+NotEndWith     - Does not end with the expression.
+NotEqual       - Not equal to.
+NotExists      - Does not exist by the specified condition.
+NotStartWith   - Does not start with the expression.
+StartWith      - Starts with the expression.
+------------------------------------------------------------------------------------------------------------------------
