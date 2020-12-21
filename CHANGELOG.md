@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.11] - 2020-12-21
+## [0.1.12] - 2020-12-21
 ### Added
 - Repository release
 - C#\Business logic of objects.cs
@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - C#\Enums.cs
 - C#\Select.cs
 - JS\Validators.js
+- Webinars\Communication robots.txt
