@@ -1,6 +1,8 @@
 // ------------------------------------------------------------------------------------------------------------------------
-// Validators
+// Field validator / Добавление валидации к полю страницы
+// https://academy.terrasoft.ru/docs/7-17/developer/front-end_development/creatio_development_cases/page_configuration/dobavlenie_validacii_k_polyu_stranicy
 // ------------------------------------------------------------------------------------------------------------------------
+
 methods: {
 			onEntityInitialized: function() {
 				this.callParent(arguments);
@@ -10,24 +12,13 @@ methods: {
 				// Вызывает инициализацию валидаторов родительской модели представления.
 				this.callParent(arguments);
 				// Для колонки добавляется метод-валидатор dueDateValidator().
-				this.addColumnValidator("StartDate", this.checkStartDate);
-				this.addColumnValidator("EndDate", this.checkEdnDate);
+				this.addColumnValidator("StartDate", this.checkDates);
+				this.addColumnValidator("EndDate", this.checkDates);
 			},
-			checkStartDate: function(value, column) {
+			checkDates: function(value, column) {
 				let msg = "";
-				if (value && this.$EndDate) {
-					if (value > this.$EndDate) {
-						msg = this.get("Resources.Strings.CheckDates");
-					}
-				}
-				return {
-					invalidMessage: msg
-				};
-			},
-			checkEndDate: function(value, column) {
-				let msg = "";
-				if (value && this.$StartDate) {
-					if (value < this.$StartDate) {
+				if (this.$StartDate && this.$EndDate) {
+					if (this.$StartDate > this.$EndDate) {
 						msg = this.get("Resources.Strings.CheckDates");
 					}
 				}
