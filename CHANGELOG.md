@@ -6,10 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.15] - 2020-12-21
+## [0.1.16] - 2020-12-21
 ### Added
 - Repository release
 - C#\Business logic of objects.cs
+- C#\CRUD.cs
 - C#\EntitySchemaQuery. Create.cs
 - C#\EntitySchemaQuery.cs
 - C#\Enums.cs
