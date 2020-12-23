@@ -1,6 +1,9 @@
 // ------------------------------------------------------------------------------------------------------------------------
 // EntitySchemaQuery
 // ------------------------------------------------------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Example 1.
 var UserConnection = Get<UserConnection>("UserConnection");
 var divisionId = Get<Guid>("ScDivision");
 var nextMonthStartDate = Get<DateTime>("NextMonthStartDate");
@@ -32,3 +35,19 @@ foreach(var scRegion in scRegions)
     	"ScDistributionSalesPlanningRMProcess", UserConnection.Workspace.Name, UserConnection.CurrentUser.Name, parameters);
 }
 return true;
+// ------------------------------------------------------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Example 2.
+private bool CheckRules(UserConnection userConnection, Entity entity) {
+    var result = false;
+    var startDate = entity.GetColumnValue("StartDate");
+    var endDate= entity.GetColumnValue("EndDate");
+    var esq = new EntitySchemaQuery(userConnection.EntitySchemaManager, "ScPriceType");
+    esq.AddAllSchemaColumns();
+    esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.GreaterOrEqual, "StartDate", startDate));
+    esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.LessOrEqual, "EndDate", endDate));
+    var accounts = esq.GetEntityCollection(userConnection);
+    return result;
+}
+// ------------------------------------------------------------------------------------------------------------------------
