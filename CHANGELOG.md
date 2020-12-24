@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.18] - 2020-12-24
+### Added
+- C#\DateTime.cs
+
 ## [0.1.17] - 2020-12-23
 ### Changed
 - C#\EntitySchemaQuery.cs
