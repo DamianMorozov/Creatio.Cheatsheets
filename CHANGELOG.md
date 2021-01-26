@@ -6,9 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.22] - 2021-01-26
+## [0.1.23] - 2021-01-26
 ### Added
 - JS\Query. EntitySchemaQuery.js
+- JS\Query. InsertQuery.js
 
 ## [0.1.21] - 2021-01-18
 ### Added
