@@ -18,6 +18,7 @@ this.loadLookupDisplayValue("Type", constants.ContractType.Standard);
 this.reloadEntity();
 // Перезагрузка детали.
 this.updateDetail({detail: "SupplyPayment"});
+this.updateDetail({ detail: "ProductUnitDetail", reloadAll: true });
 // Обновление всех деталей.
 this.updateDetail({realoadAll:true});
 ------------------------------------------------------------------------------------------------------------------------
