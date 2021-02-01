@@ -1,5 +1,5 @@
 // ------------------------------------------------------------------------------------------------------------------------
-// Refresh data
+// Refresh data.
 // ------------------------------------------------------------------------------------------------------------------------
 this.refreshGridData();
 this.reloadEntity();
@@ -17,8 +17,11 @@ this.loadLookupDisplayValue("Type", constants.ContractType.Standard);
 // Деталь.
 this.reloadEntity();
 // Перезагрузка детали.
-this.updateDetail({detail: "SupplyPayment"});
+this.updateDetail({ detail: "SupplyPayment" });
 this.updateDetail({ detail: "ProductUnitDetail", reloadAll: true });
+this.updateDetail({ primaryColumnValue: "SomeRecordId" });
+------------------------------------------------------------------------------------------------------------------------
 // Обновление всех деталей.
-this.updateDetail({realoadAll:true});
+// all-combined.js:41 Detail not found: undefined
+this.updateDetail({ realoadAll:true });
 ------------------------------------------------------------------------------------------------------------------------

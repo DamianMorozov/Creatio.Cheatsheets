@@ -6,10 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.31] - 2021-02-01
+## [0.1.32] - 2021-02-01
 ### Added
 - JS\Console.js
 - JS\TimeOut.js
+### Changed
+- JS\Refresh data.js
 
 ## [0.1.29] - 2021-01-29
 ### Changed
