@@ -15,7 +15,7 @@ https://academy.terrasoft.ru/sites/default/files/documents/downloads/SDK/Package
   [Конфигурация] - [Схемы] - [Добавить] — [Схема модели представления карточки]
   Название: UsrCourierServiceDetail
   Заголовок: Схема детали "Курьерская служба в заказе" (Courier Service in Order detail schema)
-  Родительский объект: Базовая схема детали с реестром (NUI)
+  Родительский объект: Базовая схема детали с реестром (NUI) | 4 в списке
   Для того чтобы сделать реестр детали редактируемым, в ее схеме необходимо:
   - Добавить зависимости от модулей ConfigurationGrid, ConfigurationGridGenerator, ConfigurationGridUtilities.
   - Подключить миксин ConfigurationGridUtilities.

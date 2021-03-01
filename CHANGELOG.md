@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.34] - 2021-03-01
+### Changed
+- Creatio\Деталь с редактируемым реестром.txt
+
 ## [0.1.33] - 2021-02-17
 ### Added
 - Creatio\Деталь с редактируемым реестром.txt
