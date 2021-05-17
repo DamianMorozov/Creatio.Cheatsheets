@@ -1,21 +1,21 @@
 ------------------------------------------------------------------------------------------------------------------------
 Деталь с редактируемым реестром
 https://academy.terrasoft.ru/docs/7-17/developer/front-end_development/creatio_development_cases/work_with_details/sozdanie_detali_s_redaktiruemym_reestrom
+https://academy.terrasoft.ru/docs/developer/elements_and_components/basic_interface_elements/detal
+https://academy.terrasoft.ru/documents/technic-sdk/7-16/detal-s-redaktiruemym-reestrom
 https://academy.terrasoft.ru/sites/default/files/documents/downloads/SDK/Packages/sdkCreateDetailWithEditableGrid_18.12.11_13.12.28.zip
 ------------------------------------------------------------------------------------------------------------------------
 1. Создать схему объекта детали.
   [Конфигурация] - [Схемы] - [Добавить] — [Объект]
-  Название: UsrCourierService
-  Заголовок: CourierService
-  Родительский объект: Base object (Base)
-  В схему объекта добавить справочную колонку Заказ (Order). Обязательная для заполнения: На уровне приложения.
-  В схему объекта добавить справочную колонку Контрагент (Account). Обязательная для заполнения: На уровне приложения.
+  UsrCourierService / Курьерская служба / Базовый объект ( Base )
+  + справочную колонку UsrOrder / Заказ. Обязательная для заполнения: На уровне приложения.
+  + справочную колонку UsrAccount / Контрагент. Обязательная для заполнения: На уровне приложения.
 ------------------------------------------------------------------------------------------------------------------------
 2. Создать и сконфигурировать схему детали.
   [Конфигурация] - [Схемы] - [Добавить] — [Схема модели представления карточки]
-  Название: UsrCourierServiceDetail
-  Заголовок: Схема детали "Курьерская служба в заказе" (Courier Service in Order detail schema)
-  Родительский объект: Базовая схема детали с реестром (NUI) | 4 в списке
+  UsrCourierServiceDetail / Схема детали "Курьерская служба в заказе" / Базовая схема детали с реестром ( NUI ) | 4 в списке
+  // Базовая схема детали с реестром (BaseGridDetailV2)
+  LocalizationStrings: Caption
   Для того чтобы сделать реестр детали редактируемым, в ее схеме необходимо:
   - Добавить зависимости от модулей ConfigurationGrid, ConfigurationGridGenerator, ConfigurationGridUtilities.
   - Подключить миксин ConfigurationGridUtilities.
