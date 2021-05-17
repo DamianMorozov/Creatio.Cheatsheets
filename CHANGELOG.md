@@ -6,11 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.38] - 2021-05-17
+## [0.1.39] - 2021-05-17
 ### Changed
 - Creatio\Деталь с редактируемым реестром.txt
 ### Added
 - C#\CustomQuery.cs
+- C#\Log.cs
 
 ## [0.1.35] - 2021-04-09
 ### Added
